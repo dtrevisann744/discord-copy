@@ -248,7 +248,6 @@ main p {
     border-radius: 130px; 
     padding: 10px;
     gap: 15px;   
-    margin-top: 200px;
 }
 
 .div-main-3 video {
@@ -276,6 +275,91 @@ main p {
     gap: 20px;
 }
 
+.box {
+    margin-top: 80px;
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-bottom: -80px; /* puxa a div-main-3 pra cima */
+    position: relative;   /* necessário para o z-index funcionar */
+    z-index: 1;           /* fica na frente da div-main-3 */
+}
+
+/* container da faixa — esconde o que sair dos lados */
+.faixa {
+    background-image: linear-gradient(to bottom, #252752, #5359B9);
+    padding: 45px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 200px;
+
+    /* cancela o padding do main nas laterais */
+    margin-left: -150px;
+    margin-right: -150px;
+}
+
+/* conteúdo que vai se mover */
+.faixa-conteudo {
+    display: inline-flex; /* lado a lado em linha */
+    gap: 40px;
+    align-items: center;
+    animation: rolar 10s linear infinite; /* chama a animação */
+}
+
+.faixa-conteudo span {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* a mágica da animação */
+@keyframes rolar {
+    from {
+        transform: translateX(0);      /* começa na posição original */
+    }
+    to {
+        transform: translateX(-50%);   /* move metade — onde começa a repetição */
+    }
+}
+
+.div-main-4 {
+    display: flex;
+    align-items: center;      /* centraliza verticalmente o texto em relação ao vídeo */
+    background-image: linear-gradient(to right, #343693, #6C75DD 80%);
+    border-radius: 130px;
+    padding: 10px;
+    gap: 15px;    
+    margin-top: 200px;
+}
+
+.div-main-4 video {
+    border-radius: 140px;
+    padding: 20px;
+}
+
+.div-main-4 h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    line-height: 0.9.5;
+}
+.div-main-4 p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    max-width: 400px;            /* largura máxima do texto */
+}
+
+.conteudo-main-4 {
+    display: flex;
+    flex-direction: column;   /* h1 e p empilhados */
+    gap: 20px;
+    padding: 40px;
+    margin-left: 15px;
+}
 
 /* TELAS MENORES QUE 1024px */
 
@@ -383,29 +467,48 @@ main p {
         margin-top: 100px;
     }
 
-    .div-main video, .div-main-2 video, .div-main-3 video {
+    .div-main-4{
+        flex-direction: column;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        overflow: hidden; /* impede conteúdo de vazar pra fora */
+        margin-top: 100px;
+    }
+
+    .div-main video, .div-main-2 video, .div-main-3 video, .div-main-4 video {
         width: 90%;
         border-radius: 70px;
     }
 
-    .div-main h1, .div-main-2 h1, .div-main-3 h1 {
+    .div-main h1, .div-main-2 h1, .div-main-3 h1, .div-main-4 h1 {
         font-size: 35px;
         word-break: break-word; /* quebra palavra se necessário */
     }
 
-    .div-main p, .div-main-2 p, .div-main-3 p {
-    width: 100%;
-    max-width: 400px;      /* limita a largura */
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;        /* centraliza o bloco dentro do container */
-}
+    .div-main p, .div-main-2 p, .div-main-3 p, .div-main-4 p {
+        width: 100%;
+        max-width: 400px;      /* limita a largura */
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;        /* centraliza o bloco dentro do container */
+    }
 
-    .conteudo-main, .conteudo-main-2, .conteudo-main-3 {
+    .conteudo-main, .conteudo-main-2, .conteudo-main-3, .conteudo-main-4 {
         padding: 0 20px 20px 20px; /* respiro nas laterais */
         text-align: center;
     }
 
+    .box {
+        display: flex;
+        justify-content: right;
+        margin-right: 10px;
+        margin-bottom: -170px; /* puxa a div-main-3 pra cima */
+        position: relative;   /* necessário para o z-index funcionar */
+        z-index: 1;           /* fica na frente da div-main-3 */
+    }
+
+    
 
 }
 
@@ -444,7 +547,7 @@ main p {
         font-size: 19px;  /* texto menor dentro dos botões */
     }
 
-    .conteudo-main, .conteudo-main-2, .conteudo-main-3 {
+    .conteudo-main, .conteudo-main-2, .conteudo-main-3, .conteudo-main-4 {
         text-align: center;
         padding: 20px 15px 20px 15px; /* menos padding nas laterais */
         margin: auto;
@@ -481,11 +584,19 @@ main p {
         overflow: hidden; /* impede conteúdo de vazar pra fora */
     }
 
-    .div-main p, .div-main-2 p, .div-main-3 p {
-    width: 100%;
-    max-width: 400px;      /* limita a largura */
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;        /* centraliza o bloco dentro do container */
-}
+    .div-main-4 {
+        flex-direction: column;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        overflow: hidden; /* impede conteúdo de vazar pra fora */
+    }
+
+    .div-main p, .div-main-2 p, .div-main-3 p, .div-main-4 p {
+        width: 100%;
+        max-width: 400px;      /* limita a largura */
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;        /* centraliza o bloco dentro do container */
+    }
 }
