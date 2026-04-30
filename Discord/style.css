@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('imagens/body discord.png');
+    background-size: cover;     /* cobre 100% da tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* não repete */
+}
+
+header {
+    color: white;
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;                  /* coloca filhos lado a lado */
+    align-items: center;            /* centraliza verticalmente */
+    justify-content: space-between; /* logo na esquerda, entrar na direita */
+}
+
+header .logo {
+    min-width: 100px;
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Entrar {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s, color 0.3s;
+
+}
+
+.Entrar:hover {
+    background-color: #c7c2c2;
+}
+
+
+/* Esconde o checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Esconde o hamburguer em telas grandes */
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px 150px;
+}
+
+/* container principal: foto + texto lado a lado */
+.hero {
+    display: flex;
+    flex-direction: row;      /* lado a lado */
+    align-items: center;      /* centraliza verticalmente */
+    gap: 100px;
+}
+
+/* lado esquerdo */
+.hero-imagem img {
+    width: 700px;
+}
+
+.img-girl {
+    width: 170px;
+
+}
+
+/* lado direito */
+.hero-texto {
+    display: flex;
+    flex-direction: column;   /* h1 e p empilhados */
+    gap: 20px;
+}
+
+main h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+    line-height: 1;         /* era 3.3rem, esse valor fazia as linhas colarem */
+}
+
+main p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;        /* espaço acima dos botões */
+    justify-content: center; /* centraliza horizontalmente */
+    margin-bottom: 30px;
+}
+
+.botoes p {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+    margin: auto;
+}
+
+.botao-download {
+    display: flex;
+    border: 2px solid white;
+    background-color: white;
+    padding: 12px 45px;
+    border-radius: 10px;
+    transition: 0.3s, color 0.3s;
+    gap: 20px;
+}
+
+.botao-download:hover {
+    background-color: #c7c2c2;
+    border: 2px solid #c7c2c2;
+}
+
+.botao-navegador {
+    display: flex;
+    border: 2px solid #4F5ADA;
+    background-color: #4F5ADA;
+    padding: 20px 45px;
+    border-radius: 10px;
+    transition: 0.3s, color 0.3s;
+}
+
+.botao-navegador p {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.botao-navegador:hover {
+    background-image: linear-gradient(to top, #31348C, #4F5ADA);
+    border: 2px solid #31348C;
+}
+
+.animacao {
+    display: flex;
+    justify-content: right; 
+    margin-right: 100px;
+    padding-top: 40px;
+}
+
+.div-main {
+    display: flex;
+    align-items: center;      /* centraliza verticalmente o texto em relação ao vídeo */
+    background-image: linear-gradient(to right, #6C75DD, #343693 80%);
+    border-radius: 130px;
+    padding: 10px;
+    gap: 15px;   
+}
+
+.div-main video {
+    border-radius: 140px;
+    padding: 20px;
+}
+
+.div-main h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    line-height: 0.9;
+}
+.div-main p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    max-width: 400px;            /* largura máxima do texto */
+}
+
+.conteudo-main {
+    display: flex;
+    flex-direction: column;   /* h1 e p empilhados */
+    gap: 20px;
+}
+
+.div-main-2 {
+    display: flex;
+    align-items: center;      /* centraliza verticalmente o texto em relação ao vídeo */
+    background-image: linear-gradient(to right, #343693, #6C75DD 80%);
+    border-radius: 130px;
+    padding: 10px;
+    gap: 15px;    
+    margin-top: 200px;
+}
+
+.div-main-2 video {
+    border-radius: 140px;
+    padding: 20px;
+}
+
+.div-main-2 h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 0.9;
+}
+.div-main-2 p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 1.4;
+    max-width: 400px;            /* largura máxima do texto */
+}
+
+.conteudo-main-2 {
+    display: flex;
+    flex-direction: column;   /* h1 e p empilhados */
+    gap: 20px;
+    padding: 40px;
+    margin-left: 15px;
+}
+
+.div-main-3 {
+    display: flex;
+    align-items: center;      /* centraliza verticalmente o texto em relação ao vídeo */
+    background-color: #4952CF;
+    border-radius: 130px; 
+    padding: 10px;
+    gap: 15px;   
+    margin-top: 200px;
+}
+
+.div-main-3 video {
+    border-radius: 140px;
+    padding: 20px;
+}
+
+.div-main-3 h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    line-height: 0.9;
+}
+.div-main-3 p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    max-width: 400px;            /* largura máxima do texto */
+}
+
+.conteudo-main-3 {
+    display: flex;
+    flex-direction: column;   /* h1 e p empilhados */
+    gap: 20px;
+}
+
+
+/* TELAS MENORES QUE 1024px */
+
+@media (max-width: 1024px) {
+
+    .Entrar {
+        padding: 10px 15px;
+    }
+
+    /* Mostra o hamburguer */
+    .hamburger {
+        display: block;
+    }
+
+    /* Nav começa escondido */
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px; /* ajusta conforme altura do seu header */
+        left: 49%;
+        width: 40%;
+        background-color: #3840d0a3;
+        padding: 50px 30px;
+        gap: 20px;
+    }
+
+    /* Quando o checkbox estiver marcado, o nav aparece */
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    header .logo {
+        width: 170px;
+    }
+
+    .header-acoes {
+        display: flex;
+        align-items: center;
+        gap: 30px; 
+    }
+    
+
+    main img {
+        max-width: 400px;
+    }
+
+     /* padding menor nas laterais */
+    main {
+        padding: 20px 40px;
+    }
+
+    /* hero vira coluna: texto em cima, imagem embaixo */
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-imagem {
+        order: 1; /* primeiro */
+    }
+
+    /* texto vai para baixo */
+    .hero-texto {
+        order: 2; /* segundo */
+        text-align: center;
+    }
+
+    /* botões em coluna */
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animacao {
+        display: flex;
+        justify-content: right;
+        margin-right: 50px;
+
+    }
+    /* div-main vira coluna */
+    .div-main{
+        flex-direction: column;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        overflow: hidden; /* impede conteúdo de vazar pra fora */
+    }
+
+    .div-main-2 {
+        flex-direction: column;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        overflow: hidden; /* impede conteúdo de vazar pra fora */
+        margin-top: 100px;
+    }
+
+    .div-main-3 {
+        flex-direction: column;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        overflow: hidden; /* impede conteúdo de vazar pra fora */
+        margin-top: 100px;
+    }
+
+    .div-main video, .div-main-2 video, .div-main-3 video {
+        width: 90%;
+        border-radius: 70px;
+    }
+
+    .div-main h1, .div-main-2 h1, .div-main-3 h1 {
+        font-size: 35px;
+        word-break: break-word; /* quebra palavra se necessário */
+    }
+
+    .div-main p, .div-main-2 p, .div-main-3 p {
+    width: 100%;
+    max-width: 400px;      /* limita a largura */
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;        /* centraliza o bloco dentro do container */
+}
+
+    .conteudo-main, .conteudo-main-2, .conteudo-main-3 {
+        padding: 0 20px 20px 20px; /* respiro nas laterais */
+        text-align: center;
+    }
+
+
+}
+
+
+@media (max-width: 1400px) {
+
+    main {
+        padding: 20px;
+    }
+
+    main h1 {
+        font-size: 35px;
+    }
+
+    main p {
+        font-size: 17px;
+    }
+
+    /* remove o width 100% e reduz o padding */
+    .botao-download,
+    .botao-navegador {
+        padding: 15px 25px;  /* padding menor */
+        width: auto;          /* largura automática — só do tamanho do conteúdo */
+        justify-content: center;
+    }
+
+    .botoes {
+        margin-top: 50px;
+        align-items: center;  /* centraliza os botões */
+        gap: 25px;
+    }
+
+    .botao-navegador p,
+    .botoes p {
+
+        font-size: 19px;  /* texto menor dentro dos botões */
+    }
+
+    .conteudo-main, .conteudo-main-2, .conteudo-main-3 {
+        text-align: center;
+        padding: 20px 15px 20px 15px; /* menos padding nas laterais */
+        margin: auto;
+    }
+
+     /* animação com menos margem direita */
+    .animacao {
+        display: flex;
+        justify-content: right;
+        margin-right: 40px;
+    }
+
+     /* div-main com bordas mais arredondadas e menos padding */
+    .div-main{
+        flex-direction: column;
+        border-radius: 70px;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .div-main-2 {
+        flex-direction: column;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        overflow: hidden; /* impede conteúdo de vazar pra fora */
+    }
+
+    .div-main-3 {
+        flex-direction: column;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        overflow: hidden; /* impede conteúdo de vazar pra fora */
+    }
+
+    .div-main p, .div-main-2 p, .div-main-3 p {
+    width: 100%;
+    max-width: 400px;      /* limita a largura */
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;        /* centraliza o bloco dentro do container */
+}
+}
