@@ -508,6 +508,23 @@ footer p {
     font-weight: 500;
 }
 
+.idioma {
+    margin-top: 50px;
+}
+
+footer .selecao-idioma {
+    background-color: #3A3A86;
+    color: white;
+    border: 2px solid #3A3C88;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    margin-top: 15px;
+}
+
+footer .social {
+    margin-top: 55px;
+}
 
 /* TELAS MENORES QUE 768px */
 
