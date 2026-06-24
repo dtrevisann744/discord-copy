@@ -614,29 +614,26 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.escolher-plano {
+.titulo-duvidas {
+    text-align: center; 
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 140px;
-    margin-top: 50px;
 }
 
-.latinha img {
-    width: 250px;
-    position: relative;
-    top: 20px;
-}
-
-.titulo-plano h1 {
-    color: white;
+.titulo-duvidas h1 {
     font-family: 'Montserrat', Arial;
-    font-size: 55px;
+    font-size: 50px;
 }
 
-.furacao img {
-    width: 270px;
-    position: relative;
-    bottom: 50px;
+.titulo-duvidas p {
+    color: rgb(238, 237, 237);
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-chave img {
+    width: 280px;
 }
 
