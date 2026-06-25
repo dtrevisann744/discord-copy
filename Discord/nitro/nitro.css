@@ -614,17 +614,22 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.duvidas {
+    display: flex;
+    margin-top: 100px;
+}
+
 .titulo-duvidas {
     text-align: center; 
     color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .titulo-duvidas h1 {
     font-family: 'Montserrat', Arial;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .titulo-duvidas p {
@@ -633,7 +638,17 @@ nav a:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.titulo-conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 130px;
+}
+
 .img-chave img {
     width: 280px;
+    position: relative;
+    right: 280px;
 }
 
