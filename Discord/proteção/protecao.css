@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background: linear-gradient(
+        180deg,
+        #515cd4 0%,
+        #2B328A 45%,
+        #0D102F 75%,
+        #000000 100%
+    );
+
+    background-attachment: fixed;
+}
+
+header {
+    color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    min-width: 100px;
+    width: 140px;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid transparen;
+    border-radius: 14px;
+}
+
+nav a:hover {
+    background-color: #7873f9;
+}
+
+.Entrar {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    border: white;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    transition: 0.3s, color 0.3s;
+}
+
+.Entrar:hover {
+    background-color: #c7c2c2;
+    border: #c7c2c2;
+}
+
+
+/* Esconde o checkbox */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* fazendo o body do site */
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 85%;
+}
+
+.escudo img {
+    width: 180px;
+    position: relative;
+    top: 160px;
+    right: 35px;
+}
+
+.conteudo-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.conteudo-titulo h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    width: 65%;
+    line-height: 0.9;
+}
+
+.conteudo-titulo p {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    width: 97%;
+    line-height: 1.2;
+}
+
+.ovo img {
+    width: 180px;
+    position: relative;
+    bottom: 80px;
+}
+
+
+/* fazendo a section two do site */
+
+.biblioteca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    padding-top: 200px;
+}
+
+.conteudo-biblioteca {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo-biblioteca h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    width: 65%;
+    line-height: 0.9;
+    color: white;
+}
+
+.conteudo-biblioteca p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    width: 90%;
+    line-height: 1.2;
+}
+
+.conteudo-biblioteca a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 20px 14px 22px;
+    background-color: white;
+    border-radius: 14px;
+    transition: 0.3s, color 0.3s;
+    width: 130px;
+}
+
+.conteudo-biblioteca a:hover {
+    background-color: #c7c2c2;
+
+}
+
+.livro-img img {
+    width: 550px;
+}
+
+
+
+.privacidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    padding-top: 200px;
+    gap: 30px;
+}
+
+.conteudo-privacidade {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 60px;
+}
+
+.conteudo-privacidade h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    width: 65%;
+    line-height: 0.9;
+    color: white;
+}
+
+.conteudo-privacidade p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    width: 80%;
+    line-height: 1.2;
+}
+
+.conteudo-privacidade a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 20px 14px 22px;
+    background-color: white;
+    border-radius: 14px;
+    transition: 0.3s, color 0.3s;
+    width: 130px;
+}
+
+.conteudo-privacidade a:hover {
+    background-color: #c7c2c2;
+
+}
+
+.cabana-img img {
+    width: 550px;
+}
