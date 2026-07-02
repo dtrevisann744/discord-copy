@@ -10,10 +10,10 @@ body {
     overflow-x: hidden;
 
     background: linear-gradient(
-        180deg,
+        170deg,
         #515cd4 0%,
-        #2B328A 45%,
-        #0D102F 75%,
+        #2B328A 25%,
+        #0D102F 65%,
         #000000 100%
     );
 
