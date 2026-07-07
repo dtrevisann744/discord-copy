@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-1 {
+    color: white;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+}
+
+nav a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 14px;
+}
+
+nav a:hover {
+    border-color: #7773f900;
+    background-color: #5865F2;
+}
+
+.Entrar {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    border: white;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    transition: 0.3s, color 0.3s;
+}
+
+.Entrar:hover {
+    background-color: #b8b8b8;
+    border: #5865F2;
+}
+
+
+/* Esconde o checkbox */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+body {
+    background-image: url(../src/imagens-missoes/papel-de-fundo-missoes.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-1 h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.section-1 p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center; 
+    margin-top: 40px;
+}
+
+.section-1-saibamais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.section-1-saibamais a {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px 14px 18px;
+    border: 1px solid transparent;
+    background-color: #5865F2;
+    border-radius: 12px;
+}
+
+.section-1-saibamais a:hover {
+    border-color: #5865F2;
+    background: linear-gradient(to bottom, #5865F2, #3030323f);
+}
+
+.trofeu {
+    width: 270px;
+    margin-left: auto;
+    position: relative;
+    bottom: 130px;
+    right: 130px;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2 .h1-titulo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.section-2 .p-descricao {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.section-2-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 25px;
+}
+
+.section-2-imagens img {
+    width: 400px;
+    height: 400px;
+    border-radius: 80px;
+}
+
+.imagem-1, .imagem-2, .imagem-3 {
+    border-radius: 100px;
+    padding: 30px;
+    width: 470px;
+    height: 680px;
+    background: linear-gradient(to bottom, #381f2c 40%, #c43ea2);
+}
+
+.imagem-1 h1, .imagem-2 h1, .imagem-3 h1 {
+    font-size: 35px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    line-height: 1.0;
+}
+
+.imagem-1 p, .imagem-2 p, .imagem-3 p {
+    font-size: 22px;
+    width: 280px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-bottom: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: 400;
+}
