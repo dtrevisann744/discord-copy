@@ -161,7 +161,7 @@ body {
 
 .section-2-imagens img {
     width: 400px;
-    height: 400px;
+    height: 370px;
     border-radius: 80px;
 }
 
@@ -192,4 +192,66 @@ body {
     margin-left: 50px;
     margin-top: 20px;
     font-weight: 400;
+}
+
+.section-3 {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    margin-top: 150px;
+}
+
+.section-3-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-3-esquerda h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 59px;
+    width: 50%;
+    line-height: 1.0;
+
+}
+
+.section-3-esquerda .p-titulo {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    width: 70%;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.missoes {
+    margin-top: 60px;
+}
+
+.missoes-titulo  {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.missoes-titulo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.missoes-titulo p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.section-3-direita img {
+    width: 650px;
+    height: 450px;
+    border-radius: 70px;
 }
